@@ -7,14 +7,14 @@ export default function About(props) {
   // });
   let myStyle={
     color:props.mode==='dark'?'white':'black',
-    background:props.mode==='dark'?'#032770':'white'
+    background:props.mode==='dark'?'black':'white'
   }
   return (
     <div className="container m-5 p-10" style={myStyle}>
       <h1>About Us</h1>
-      <div className="accordion p-10" id="accordionExample" style={myStyle}>
+      <div className="accordion p-10 border border-black rounded-top" id="accordionExample" style={myStyle}>
         <div className="accordion-item">
-          <h2 className="accordion-header">
+          <h2 className="accordion-header border border-black">
             <button
               className="accordion-button"
               type="button"
@@ -40,7 +40,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header">
+          <h2 className="accordion-header border border-black">
             <button
               className="accordion-button collapsed"
               type="button"
@@ -67,7 +67,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header">
+          <h2 className="accordion-header border border-black rounded-bottom">
             <button
               className="accordion-button collapsed"
               type="button"

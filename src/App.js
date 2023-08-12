@@ -14,10 +14,11 @@ import {
 
 function App() {
   const [mode, setMode] = useState("light");
-  const toggleMode = () => {
+  const toggleMode = (cls) => {
     if (mode === "dark") {
       setMode("light");
       showAlert("Light mode has been enabled", "success");
+      document.body.classList.add('bg-'+cls)
       // document.title = "TextUtils-Home-Light Mode";
     } else {
       setMode("dark");
